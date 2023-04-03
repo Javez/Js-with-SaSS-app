@@ -2,16 +2,21 @@
 body {
     font-family: 'Orbitron', sans-serif;
     background-color: rgb(0, 0, 0);
+   
+}
+
+a {
+    color: rgb(255, 255, 255);
 }
 .nav-box {
     display: block;
-    background-color: rgba(255, 0, 0, 0.137);
+    
     width: 100%;
 }
 .nav-main-box {
     display: flex;
     margin: 10px; 
-    background-color: rgba(128, 128, 128, 0.228);
+    background-color: rgba(0, 0, 0, 0.678);
 }
 
 .logo-box { 
@@ -42,6 +47,7 @@ body {
 .sidebar-container {
     display: flex;
     height: 100%;
+   
 }
   
 .sidebar {
@@ -51,17 +57,24 @@ body {
     width: 200px;
     height: 100%;
     background-color: #333;
-    transition: left 0.3s ease-in-out;
+    
 }
-  
-.sidebar.open {
-    left: 0;
+
+.sidebar-icon-box {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;  
 }
-  
-.content {
-    flex: 1;
-    padding: 20px;
+
+#sidebar-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
+
 
 .auth-main-box {
     display: flex;
@@ -80,6 +93,7 @@ body {
 }
 
 .auth-box {
+    
     display: flex;
     width: 500px;
     height: 500px; 
@@ -90,4 +104,41 @@ body {
     background-size: cover;
     background-position: top;
     clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+    
+}
+
+.help-box {
+    width: 15%;
+    position: absolute;
+    left: 20%;
+}
+.help-span {
+    display: block;
+    font-size: large;
+    font-weight: bold;
+}
+
+@keyframes animation-left {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+}
+@keyframes animation-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
