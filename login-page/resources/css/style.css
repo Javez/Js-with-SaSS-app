@@ -1,12 +1,11 @@
 
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: rgb(0, 0, 0);
-   
+    background-color: black;
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .nav-box {
     display: block;
@@ -18,12 +17,12 @@ a {
     margin: 10px; 
     background-color: rgba(0, 0, 0, 0.678);
 }
-
 .logo-box { 
     display: flex;
     flex: 1 1 50%;
     align-items: center; 
-    text-decoration: none;   
+    text-decoration: none; 
+    color: white;  
 }
 .nav-logo-img {
     display: absolute;
@@ -37,27 +36,32 @@ a {
     list-style-type: none;
     align-items: center;
 }
+nav 
 .nav-list-li {
    padding: 0px 10px 0px;
 }
 .nav-list-li a {
     text-decoration: none;
+    color: white;
+}
+.sidebar {
+    position: absolute;
+    right: 0px;
+    top: -300px;
+    background-color: #ffffffc9;
+    z-index: 1;
+    width: 10%;
+    padding: 5px;
+}
+.sidebar li {
+    text-align: center;
+    list-style-type: none;
+    margin:  10px auto 10px; 
 }
 
-.sidebar-container {
-    display: flex;
-    height: 100%;
-   
-}
-  
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -200px;
-    width: 200px;
-    height: 100%;
-    background-color: #333;
-    
+.sidebar li a{
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar-icon-box {
@@ -65,7 +69,6 @@ a {
     align-items: center; 
     text-decoration: none;  
 }
-
 #sidebar-icon {
     padding-left: 10px;
     padding-right: 10px;
@@ -74,12 +77,11 @@ a {
     justify-content: center;
     margin: 10px;
 }
-
-
 .auth-main-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    position:relative;
     height: 85vh;
     margin: 10px;
     background-image: linear-gradient(to right bottom,
@@ -88,12 +90,24 @@ a {
      url(/login-page/resources/images/background.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 94.91% 84%, 0% 100%);
-   
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
+    transition: all 0.3s linear;
+    background-color: aquamarine;
+    opacity: 0.9;
+    z-index: 3;
+    
 }
+.auth-main-box:hover {
+    background-color: black;
+    opacity: 0.8;
+    z-index: 3;
+  }
+
+
 
 .auth-box {
-    
+    position: relative;
     display: flex;
     width: 500px;
     height: 500px; 
@@ -104,18 +118,37 @@ a {
     background-size: cover;
     background-position: top;
     clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
-    
+    z-index: 10;
+   
 }
 
 .help-box {
-    width: 15%;
     position: absolute;
-    left: 20%;
+    display: flex;
+    bottom: 0px;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 98%;
 }
-.help-span {
+#question-icon {
     display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    
+}
+#help-span {
+    visibility: hidden;
     font-size: large;
-    font-weight: bold;
+    color: white;  
+}
+
+
+form span {
+ color: white;
+}
+.auth-form {
 }
 
 @keyframes animation-left {

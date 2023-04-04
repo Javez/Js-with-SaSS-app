@@ -9,13 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/login-page/resources/css/style.css">
         <script type="text/javascript" src="/login-page/resources/js/sidebar.js"></script>
+        <script type="text/javascript" src="/login-page/resources/js/question.js"></script>
         <script src="https://kit.fontawesome.com/1404d91972.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <div class="nav-box">
             <nav class="nav-main-box">
-                <a class="logo-box" href=""><img class="nav-logo-img" src="/global/logo/png/logo-white.png" alt="">Hello</a>
+                <a class="logo-box" href=""><img class="nav-logo-img" src="/global/logo/png/logo-white.png" alt="">JavezTM</a>
                 <ul class="nav-list">
                     <li class="nav-list-li"><a href="#">Home</a></li>
                     <li class="nav-list-li"><a href="#">About</a</li>
@@ -24,26 +25,39 @@
                     <li class="nav-list-li"><a href="#">Help</a</li>
                     
                 </ul>
-                <a class="sidebar-icon-box" href=""><i id="sidebar-icon" class="fa-sharp fa-solid fa-bars fa-xl"></i></a>
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                    </ul>
-                </div>
+                
+                <a class="sidebar-icon-box" onclick="openCloseSidebar()"><i id="sidebar-icon" class="fa-sharp fa-solid fa-bars fa-xl" style="color:white"></i></a>
+                
             </nav>
         </div>
         
         <div class="auth-main-box">
-            <div class="help-box">
-                <span class="help-span">Dont have an account?, you can create your test account, or use already created</span>
-                <span class="help-span">Login: user</span>
-                <span class="help-span">Password: user</span>
+            <div class="sidebar" id="sidebar">
+                <ul>
+                    <li><a href="#">First link</a></li>
+                    <li><a href="#">Second link</a></li>
+                    <li><a href="#">Third link</a></li>
+                    <li><a href="#">Fourth link</a></li>
+                </ul>
             </div>
-            <div class="auth-box">
+            
 
+            
+            <div class="auth-box">
+                
+                <form class="auth-form" action="">
+                    
+                    <input type="email" name="" id="">
+                    <input type="password" name="" id="">
+                    <input type="checkbox" name="" id="">
+                    <span>Remember me</span>
+                    <span>Forgot password</span>
+                    <input type="button" value="">
+                </form>
+                <div class="help-box">
+                    <a id="question-icon" onclick="openCloseQuestion()"><i class="fa-sharp fa-solid fa-question fa-beat fa-lg" style="color:white"></i></a>
+                    <span id="help-span">[ Test account Login: user Password: user ]</span>
+                </div>
             </div>
         </div>
         
