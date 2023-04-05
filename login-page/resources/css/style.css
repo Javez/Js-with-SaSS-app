@@ -1,6 +1,6 @@
+body, input, textarea, button {font-family: 'Orbitron', sans-serif}
 
 body {
-    font-family: 'Orbitron', sans-serif;
     background-color: black;
 }
 
@@ -94,14 +94,12 @@ nav
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
     transition: all 0.3s linear;
     background-color: aquamarine;
-    opacity: 0.9;
-    z-index: 3;
+    opacity: 0.8;
     
 }
 .auth-main-box:hover {
     background-color: black;
-    opacity: 0.8;
-    z-index: 3;
+    opacity: 1;
   }
 
 
@@ -121,7 +119,16 @@ nav
     z-index: 10;
    
 }
-
+.auth-box-header {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 .help-box {
     position: absolute;
     display: flex;
@@ -149,6 +156,50 @@ form span {
  color: white;
 }
 .auth-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size:x-large;
+}
+.auth-form label {
+    color: white;
+}
+
+.auth-main-input {
+    height: 5%;
+    margin-bottom: 15px;
+    font-size:large;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 10px;
+}
+.auth-flex-container {
+    font-size:small;
+    flex:auto;
+    
+}
+.auth-form button {
+    margin-top: 15px;
+    font-size:x-large;
+}
+.auth-span-row {
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+}
+.auth-form input[type="checkbox"] {
+    
+    vertical-align: middle;
+}
+#auth-span-space {
+    position:absolute;
+    right: 0%;
 }
 
 @keyframes animation-left {

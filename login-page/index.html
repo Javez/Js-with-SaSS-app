@@ -41,18 +41,22 @@
                 </ul>
             </div>
             
-
-            
             <div class="auth-box">
-                
+                <h1 class="auth-box-header">Enter your data</h1>
                 <form class="auth-form" action="">
-                    
-                    <input type="email" name="" id="">
-                    <input type="password" name="" id="">
-                    <input type="checkbox" name="" id="">
-                    <span>Remember me</span>
-                    <span>Forgot password</span>
-                    <input type="button" value="">
+                    <label for="">Email</label>
+                    <input class="auth-main-input" type="email" placeholder="example@gmail.com" name="" id="">
+
+                    <label for="">Password</label>
+                    <input class="auth-main-input" type="password" placeholder="1example23" name="" id="">
+
+                    <div class="auth-flex-container">
+                        <input class="auth-span-row" type="checkbox" name="" id="">
+                        <span class="auth-span-row">Remember me</span>
+                        <span id="auth-span-space" class="auth-span-row">Forgot password</span>
+                    </div>
+
+                    <button type="submit">Confirm</button>
                 </form>
                 <div class="help-box">
                     <a id="question-icon" onclick="openCloseQuestion()"><i class="fa-sharp fa-solid fa-question fa-beat fa-lg" style="color:white"></i></a>
