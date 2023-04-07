@@ -52,6 +52,8 @@ nav
     z-index: 1;
     width: 10%;
     padding: 5px;
+    transition: all 1s;
+    
 }
 .sidebar li {
     text-align: center;
@@ -143,12 +145,18 @@ nav
     width: 20px;
     height: 20px;
     text-align: center;
-    
+    border: 0px;
 }
 #help-span {
+    display: inline-flex;
+     align-items: center;
+    opacity: 0;
     visibility: hidden;
+    transition: all 3s;
     font-size: large;
-    color: white;  
+    color: white; 
+    
+    height: 20px;
 }
 
 
@@ -202,27 +210,19 @@ form span {
     right: 0%;
 }
 
-@keyframes animation-left {
+@keyframes sidebarClose {
     0% {
-
-    }
-    50% {
-
+        top: 0px;
     }
     100% {
-
+        top: -300px;
     }
 }
-@keyframes animation-right {
+@keyframes sidebarOpen {
     0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    50% {
-        opacity: 0.5;
+        top: -300px;
     }
     100% {
-        opacity: 1;
-        transform: translate(0);
+        top: 0px;
     }
 }
