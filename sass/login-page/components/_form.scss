@@ -1,0 +1,147 @@
+.form {
+
+    .auth-main-box {
+    
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        height: 85vh;
+        width: calc(100vw - 20px);
+        margin: 10px;
+        background-image: linear-gradient(to right bottom,
+         rgba(35, 22, 7, 0.8),
+         rgb(255, 158, 54, 0.8)),
+         url(/login-page/resources/images/background.jpg);
+        background-size: cover;
+        background-position: top;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
+        transition: all 0.3s linear;
+        background-color: aquamarine;
+        opacity: 0.8;
+        
+    }
+    .auth-main-box:hover {
+        background-color: black;
+        opacity: 1;
+    }
+    
+    
+    
+    .auth-box {
+        position: relative;
+        display: flex;
+        width: 500px;
+        height: 500px; 
+        border: rgb(255, 255, 255) solid 5px;
+        background-image: linear-gradient(to right bottom,
+         rgba(0, 0, 0, 0.8),
+         rgba(0, 0, 0, 0.8));
+        background-size: cover;
+        background-position: top;
+        clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+       
+    }
+    .auth-box-header {
+        display: block;
+        position: absolute;
+        color: white;
+        width: 80%;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .help-box {
+        position: absolute;
+        display: flex;
+        bottom: 0px;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 98%;
+    }
+    #question-icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        border: 0px;
+        background-color: rgba(0, 183, 255, 0.83);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    #help-span {
+        display: inline-flex;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 3s;
+        font-size: large;
+        color: white; 
+        
+        height: 20px;
+    }
+
+    
+
+form span {
+    color: white;
+   }
+   .auth-form {
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       width: 60%;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%);
+       font-size:x-large;
+   }
+   .auth-form label {
+       color: white;
+   }
+   
+   .auth-main-input {
+       height: 5%;
+       margin-bottom: 15px;
+       font-size:large;
+       font-weight: bold;
+       padding-left: 10px;
+       padding-bottom: 4px;
+       padding-top: 4px;
+       padding-right: 10px;
+   }
+   .auth-flex-container {
+       font-size:small;
+       flex:auto;
+       
+   }
+   .auth-form button {
+       margin-top: 15px;
+       font-size:x-large;
+   }
+   .auth-span-row {
+       margin-top: 0;
+       margin-bottom: 0;
+       justify-content: center;
+   }
+   .auth-form input[type="checkbox"] {
+       
+       vertical-align: middle;
+   }
+   #auth-span-space {
+       position:absolute;
+       right: 0%;
+   }
+   
+   @media screen and (max-height: 680px) {
+       .auth-main-box {
+           height: 580px;
+       }
+   }
+
+
+}
