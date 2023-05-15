@@ -5,20 +5,34 @@
 }
 
 
-@keyframes sidebarClose {
+@keyframes nav-icon-close {
     0% {
-        top: 0px;
+        flex: 1 0 30rem;
+        left: 0rem;
+        position: relative;
+        opacity: 1;
+        transition-timing-function: cubic-bezier(.17,.67,.83,.67);
     }
     100% {
-        top: -300px;
+        flex: 1 0 0rem;
+        left: 4%;
+        position: relative;
+        opacity: 0;
     }
 }
-@keyframes sidebarOpen {
+@keyframes nav-icon-open {
     0% {
-        top: -300px;
+        flex: 1 0 0rem;
+        left: 4%;
+        position: relative;
+        opacity: 0;
+        transition-timing-function: cubic-bezier(.17,.67,.83,.67);
     }
     100% {
-        top: 0px;
+        flex: 1 0 30rem;
+        left: 0rem;
+        position: relative;
+        opacity: 1;
     }
 }
 @keyframes submitButtonHoverIn {

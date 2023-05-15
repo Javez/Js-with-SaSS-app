@@ -1,11 +1,13 @@
 let activeStatus = false;
 
-const openCloseSidebar = () => {
-    if(activeStatus === false) {
-        document.getElementById("sidebar").style.top = "0";
-        activeStatus = true;
+const openCloseNavIcon = () => {
+    if(activeQuestion === false) {
+       
+        document.getElementById("nav-list").style.animation = "nav-icon-open 1s forwards" 
+        activeQuestion = true;
     } else {
-        document.getElementById("sidebar").style.top = "-300px";
-        activeStatus = false;
+        
+        document.getElementById("nav-list").style.animation = "nav-icon-close 1s forwards"
+        activeQuestion = false;
     }
 }

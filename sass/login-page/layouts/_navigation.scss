@@ -1,45 +1,47 @@
 .nav-box {
     display: block;
-    
     width: 100%;
 }
 .nav-main-box {
     display: flex;
-    
-   
-    margin: 10px; 
-    background-color: rgba(0, 0, 0, 0.678);
+    flex-wrap: wrap;
+    margin: 1rem; 
 }
 .logo-box { 
     display: flex;
-    flex: 2 1 20%;
+    flex: 1 0 20%;
     align-items: center; 
     text-decoration: none; 
-    color: white;  
+    color: $color-white;  
 }
 .nav-logo-img {
     display: absolute;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     margin: 0;
-    margin-right: 5px;
+    margin-right: 0.5rem;
 }
 .nav-list {
     display: flex;
-    flex: 1 1 auto;
     list-style-type: none;
     align-items: center;
+    flex: 1 0 0rem;
+    left: 5.5rem;
+    position: relative;
+    opacity: 0;
     
-    width: 50%;
+    
+    animation: "";
 }
 nav 
 .nav-list-li {
-    background-color: white;
-    
+    background-color: #ffffffc9;
+    flex: 0 0 20%;
+    flex-wrap: wrap;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-   width: 20%;
-   padding: 0px 10px 0px;
-   
+    z-index: 1;
+   padding: 0rem 1rem 0rem;
+
 }
 .nav-list-li a {
     display: flex;
@@ -48,27 +50,48 @@ nav
     color: black;
 }
 
-@media screen and (max-width: 610px) {
-    .nav-main-box {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center; 
+.nav-icon-box {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;  
+    background-color: black;
+    z-index: 2;
+    #icon-btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        color: #ffffffc9;
     }
-    .nav-list-li {
-        margin: 5px;
-    }
-    .logo-box {
-        margin-bottom: 10px;
-    }
-    .nav-list {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-    .sidebar-icon-box {
-        margin-bottom: 10px;
-    }
-    #sidebar {
-        width: 30%;
+    #icon-btn:hover {
+        cursor: pointer;
+        color:rgb(0, 183, 255);
     }
 
+
+}
+
+@media screen and (max-width: 740px) {
+    .logo-box {
+        order: 1;
+        flex: 0 1 50%;
+    }
+    .nav-icon-box {
+        order: 2;
+        flex: 1 1 50%;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+    .nav-list {
+        order: 3;
+        margin: 1rem;
+        flex: 1 0 80%;
+        align-items: flex-end;
+    }
+    .nav-list-li a {
+        font-size: 1.3rem;
+    }
 }
