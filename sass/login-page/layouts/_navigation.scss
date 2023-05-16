@@ -1,11 +1,15 @@
 .nav-box {
     display: block;
     width: 100%;
+    background-color: black;
+    
+    padding-bottom: .1rem;
 }
 .nav-main-box {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem; 
+    margin: 1rem;
+  
 }
 .logo-box { 
     display: flex;
