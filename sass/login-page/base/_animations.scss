@@ -15,7 +15,7 @@
     }
     100% {
         flex: 1 0 0rem;
-        left: 4%;
+        left: 3%;
         position: relative;
         opacity: 0;
     }
@@ -23,7 +23,7 @@
 @keyframes nav-icon-open {
     0% {
         flex: 1 0 0rem;
-        left: 4%;
+        left: 3%;
         position: relative;
         opacity: 0;
         transition-timing-function: cubic-bezier(.17,.67,.83,.67);
@@ -56,5 +56,13 @@
         clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 100% 80%, 100%  100%, 0% 100%, 0% 80%, 0% 20%);
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
+    }
+}
+@keyframes backgroundTransform {
+    0% {
+      
+    }
+    100% {
+      
     }
 }

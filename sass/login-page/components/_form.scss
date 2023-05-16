@@ -37,9 +37,14 @@
     height: 2rem;
     text-align: center;
     border: 0rem;
-    background-color: rgba(0, 183, 255, 0.83);
+    background-color: rgba(255, 155, 0, 0.8);
     border-radius: 50%;
     cursor: pointer;
+}
+.test-user {
+    color: rgba(54, 165, 255, 0.8);
+    padding-left: .1rem;
+    padding-right: .5rem;
 }
 #help-span {
     display: inline-flex;
@@ -72,7 +77,6 @@ color: white;
 }
 
 .auth-main-input {
-    height: 5%;
     margin-bottom: 1.5rem;
     font-size:large;
     font-weight: bold;
@@ -80,7 +84,32 @@ color: white;
     padding-bottom: 0.4rem;
     padding-top: 0.4rem;
     padding-right: 1rem;
+    border: solid 0.2rem rgba(119, 119, 119, 0.607);
+    &:invalid {
+        border: solid 0.2rem rgba(185, 0, 0, 0.83);
+    }
+    &:focus {
+        outline-offset: .1rem;
+        outline: 0.2rem solid #ffffff;
+        
+    }
+
 }
+.auth-main-input-label {
+    color:white;
+    visibility: visible;
+    display: block;
+    font-size: 1.5rem;
+    align-self: start;
+    padding-left: .5em;
+    padding-right: .5em;
+    position: relative;
+    transform: translate(0.3rem, 30%);
+    width: max-content;
+    background-image: linear-gradient(to top, #0000 0 calc(50% - 2px), rgba(255, 255, 255, 0) calc(60% - 10px));
+}
+
+
 .auth-flex-container {
     font-size:small;
     flex: 1 0 auto;
@@ -99,6 +128,12 @@ color: white;
     
     vertical-align: middle;
 }
+
+.auth-form input[type="checkbox"] {
+    
+    vertical-align: middle;
+}
+
 #auth-span-space {
     position:absolute;
     right: 0%;

@@ -7,7 +7,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/login-page/resources/css/style.css">
-        <script type="text/javascript" src="/login-page/resources/js/sidebar.js"></script>
+        <script type="text/javascript" src="/login-page/resources/js/navSidebar.js"></script>
         <script type="text/javascript" src="/login-page/resources/js/question.js"></script>
         <script src="https://kit.fontawesome.com/1404d91972.js" crossorigin="anonymous"></script>
 </head>
@@ -31,14 +31,16 @@
            
             
             <div class="auth-box">
-                <h1 class="auth-box-header">Enter your data</h1>
+                <h1 class="auth-box-header">Sign up</h1>
                 <form class="auth-form" action="">
-                    <label for="">Email</label>
-                    <input class="auth-main-input" type="email" placeholder="example@gmail.com" name="" id="">
-
-                    <label for="">Password</label>
-                    <input class="auth-main-input" type="password" placeholder="1example23" name="" id="">
-
+                    <div class="form-group">
+                        <label class="auth-main-input-label" for="email" placeholder="Email">Email</label>
+                        <input class="auth-main-input" type="email" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label class="auth-main-input-label" for="password" placeholder="Password">Password</label>
+                        <input class="auth-main-input" type="password" name="" id="">
+                    </div>
                     <div class="auth-flex-container">
                         <input class="auth-span-row" type="checkbox" name="" id="">
                         <span class="auth-span-row">Remember me</span>
@@ -49,7 +51,7 @@
                 </form>
                 <div class="help-box">
                     <button id="question-icon" onclick="openCloseQuestion()"><i class="fa-sharp fa-solid fa-question fa-beat fa-lg" style="color:black"></i></button>
-                    <span id="help-span"> Test account Login: user Password: user </span>
+                    <span id="help-span"> Test account Login: <span class="test-user">user</span> Password: <span class="test-user">user</span> </span>
                 </div>
             </div>
         </div>

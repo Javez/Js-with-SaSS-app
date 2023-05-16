@@ -8,22 +8,16 @@
     height: 85vh;
     width: calc(100vw - 2rem);
     margin: 1rem;
-    background-image: linear-gradient(to right bottom,
-     rgba(35, 22, 7, 0.8),
-     rgba(255, 158, 54, 0.8)),
-     url(/login-page/resources/images/background.jpg);
-    background-size: cover;
-    background-position: top;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90.39% 93.17%, 0% 100%);
-    transition: all 0.3s linear;
-    background-color: aquamarine;
-    opacity: 0.8;
     
+    #question-icon { 
+        background-color: rgba(54, 165, 255, 0.8);  
+    }
+    .auth-main-input-label {
+        color: rgba(54, 165, 255, 0.8);
+    }
 }
 .auth-main-box:hover {
-    background-color: black;
-    opacity: 1;
+   
 }
 @media screen and (max-height: 570px) {
     .auth-main-box {

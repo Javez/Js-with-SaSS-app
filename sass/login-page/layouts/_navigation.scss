@@ -52,18 +52,19 @@ nav
 
 .nav-icon-box {
     display: flex;
-    align-items: center; 
+    justify-content: center;
     text-decoration: none;  
     background-color: black;
     z-index: 2;
+    border: solid .18rem white;
+    width: 5rem;
     #icon-btn {
         padding-left: 1rem;
         padding-right: 1rem;
         display: flex;
         align-items: center;
-        justify-content: center;
         margin: 1rem;
-        color: #ffffffc9;
+        color: #fff;
     }
     #icon-btn:hover {
         cursor: pointer;
