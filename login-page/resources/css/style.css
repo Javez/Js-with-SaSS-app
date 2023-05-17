@@ -44,11 +44,13 @@ $gutter-horizontal: 6rem;*/
 html {
   font-size: 62.5%;
   height: 100vh;
-  background-color: black; }
+  background-color: black;
+  overflow: hidden; }
 
 body {
   box-sizing: border-box;
-  background-color: #000; }
+  background-color: #000;
+  overflow: hidden; }
 
 a {
   color: #000; }
@@ -285,7 +287,6 @@ body:hover {
 .nav-box {
   display: block;
   width: 100%;
-  background-color: black;
   padding-bottom: .1rem; }
 
 .nav-main-box {
@@ -334,11 +335,8 @@ nav
 
 .nav-icon-box {
   display: flex;
-  justify-content: center;
   text-decoration: none;
-  background-color: black;
   z-index: 2;
-  border: solid .18rem white;
   width: 5rem; }
   .nav-icon-box #icon-btn {
     padding-left: 1rem;
@@ -350,6 +348,13 @@ nav
   .nav-icon-box #icon-btn:hover {
     cursor: pointer;
     color: #00b7ff; }
+
+.nav-icon-square {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  background-color: black;
+  border: solid .18rem white; }
 
 @media screen and (max-width: 740px) {
   .logo-box {
