@@ -1,4 +1,4 @@
-body {
+main {
     height: calc(100% - .5rem padding);
     
     background-image: linear-gradient(to right bottom,
@@ -13,7 +13,7 @@ body {
     opacity: 0.8;
 }
 
-body:hover {
+main:hover {
     transition: background-image 2s ;
     animation: backgroundTransform 3s forwards;
     background-image: linear-gradient(to right bottom,
