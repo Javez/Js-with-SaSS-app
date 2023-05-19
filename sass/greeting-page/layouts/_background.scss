@@ -1,0 +1,117 @@
+$progress-bar-size-small: 50%;
+$progress-bar-size-middle: 75%;
+$progress-bar-size-large: 100%;
+
+.background-img {
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+#progress-bar-section {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    z-index: -1;
+}
+
+#progress-bar-outer1, #progress-bar-inner1, #progress-bar-inner2 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#progress-bar-outer1 {
+    background-color: rgba(255, 85, 0, 0.543);
+    animation: progress-bar-wave-outer 3s infinite;
+    top: -20%;
+    
+}
+#progress-bar-inner1 {
+    background-color: rgba(255, 0, 0, 0.549);
+    animation: progress-bar-wave-inner1 2s infinite;
+}
+#progress-bar-inner2 {
+    background-color: rgba(28, 0, 151, 0.557);
+    animation: progress-bar-wave-inner2 4s infinite;
+}
+@keyframes from-left-to-right {
+    0% { left: -10%; }
+    30% { left: 50%; }
+    60% { right: 50% }
+    100% { right: -10%}
+}
+@keyframes from-right-to-left {
+    0% {}
+    50% {}
+    100% {}
+}
+
+@keyframes progress-bar-wave-outer {
+    0% {
+        width: $progress-bar-size-middle;
+        height: $progress-bar-size-middle;
+    }
+    50% {
+        width: $progress-bar-size-large;
+        height: $progress-bar-size-large;
+    }
+    100% {
+        width: $progress-bar-size-middle;
+        height: $progress-bar-size-middle;
+    }
+}
+@keyframes progress-bar-wave-inner1 {
+    0% {
+        padding-top: 0;
+        padding-left: 0;
+        
+        width: $progress-bar-size-small;
+        height: $progress-bar-size-small;
+    }
+    50% {
+        margin-top: 20%;
+        margin-left: 20%;
+        width: $progress-bar-size-middle;
+        height: $progress-bar-size-middle;
+    }
+    100% {
+        padding-top: 0;
+        padding-left: 0;
+        width: $progress-bar-size-small;
+        height: $progress-bar-size-small;
+    }
+}
+@keyframes progress-bar-wave-inner2 {
+    0% {
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+        width: $progress-bar-size-small;
+        height: $progress-bar-size-small;
+    }
+    25% {
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+    50% {
+        margin-bottom: 20%;
+        margin-right: 20%;
+        width: $progress-bar-size-middle;
+        height: $progress-bar-size-middle;
+    }
+    75% {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        width: $progress-bar-size-small;
+        height: $progress-bar-size-small;
+    }
+}
